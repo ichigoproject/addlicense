@@ -1,4 +1,4 @@
-module addlicense
+module github.com/ichigoproject/addlicense
 
 go 1.16
 
