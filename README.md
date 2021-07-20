@@ -1,0 +1,78 @@
+<!--
+	This file is part of Ichigo.
+
+	Ichigo is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	Ichigo is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with Ichigo.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <h1 align="center">Addlicense</h3>
+
+  <p align="center">
+    Add any license header on all files.
+    <br />
+    <a href="https://github.com/ichigoproject/addlicense"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/ichigoproject/addlicense">View Demo</a>
+    ·
+    <a href="https://github.com/ichigoproject/addlicense/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/ichigoproject/addlicense/issues">Request Feature</a>
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a></li>
+    <li><a href="#install">Install</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#License">License</a></li>
+  </ol>
+</details>
+
+## About The Project
+
+The program ensures source code files have copyright license headers
+by scanning directory patterns recursively.
+
+It modifies all source files in place and avoids adding a license header
+to any file that already has one.
+
+This project is an fork from 'addlicense' by Google Inc with GNU support.
+
+## Install
+```bash
+go get -u github.com/ichigoproject/addlicense
+```
+
+## Usage
+```
+addlicense [flags] pattern [pattern ...]
+
+-c copyright holder (defaults to "Ichigo Project")
+-f custom license file (no default)
+-l license type: apache, bsd, mit, mpl, gnu (defaults to "gnu")
+-y year (defaults to current year)
+-check check only mode: verify presence of license headers and exit with non-zero code if missing
+```
+The pattern argument can be provided multiple times, and may also refer
+to single files.
+
+## License
+Distributed under the Apache 2.0 license. See [LICENSE](https://github.com/ichigoproject/addlicense/blob/main/LICENSE) for more information.
