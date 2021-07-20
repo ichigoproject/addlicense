@@ -56,6 +56,7 @@ to any file that already has one.
 
 This project is an fork from 'addlicense' by Google Inc with GNU support.
 
+![](asserts/gif/addlicense-example.gif)
 ## Install
 ```bash
 go get -u github.com/ichigoproject/addlicense
@@ -73,6 +74,17 @@ addlicense [flags] pattern [pattern ...]
 ```
 The pattern argument can be provided multiple times, and may also refer
 to single files.
+
+### Example
+Add "apache" license header on all files.
+```
+addlicense -l apache -c "My company" apache path/to/your/code/
+```
+
+Check if headers is present or not (in current directory):
+```bash
+addlicense -check .
+```
 
 ## License
 Distributed under the Apache 2.0 license. See [LICENSE](https://github.com/ichigoproject/addlicense/blob/main/LICENSE) for more information.
