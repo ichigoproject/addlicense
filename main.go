@@ -253,6 +253,7 @@ var head = []string{
 	"<?xml",                    // XML declaratioon
 	"<!doctype",                // HTML doctype
 	"# encoding:",              // Ruby encoding
+	"# -*- coding:",            // Python encoding
 	"# frozen_string_literal:", // Ruby interpreter instruction
 	"<?php",                    // PHP opening tag
 }
