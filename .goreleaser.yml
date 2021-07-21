@@ -31,6 +31,8 @@ builds:
     goarch:
       - amd64
       - 386
+      - arm64
+      - arm
 
 archives:
   - format: tar.gz
@@ -48,6 +50,3 @@ archives:
         windows: Windows
     files:
         - README.md
-
-snapshot:
-  name_template: '{{ .Tag }}-next'
