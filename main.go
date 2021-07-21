@@ -39,6 +39,7 @@ var (
 	licensef  = flag.String("f", "", "license file")
 	year      = flag.String("y", fmt.Sprint(time.Now().Year()), "copyright year(s)")
 	verbose   = flag.Bool("v", false, "verbose mode: print the name of the files that are modified")
+	files     = flag.Int("p", 1000, "number of files to open in parallel")
 	checkonly = flag.Bool("check", false, "check only mode: verify presence of license headers and exit with non-zero code if missing")
 )
 
@@ -90,8 +91,8 @@ func main() {
 		}
 	}
 
-	// process at most 1000 files in parallel
-	ch := make(chan *file, 1000)
+	// process at most 1000 files in parallel (by default)
+	ch := make(chan *file, *files)
 	done := make(chan struct{})
 	go func() {
 		var wg errgroup.Group
