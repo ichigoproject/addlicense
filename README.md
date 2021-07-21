@@ -58,10 +58,27 @@ This project is an fork from 'addlicense' by Google Inc with GNU support.
 
 ![](asserts/gif/addlicense-example.gif)
 ## Install
+For Debian/Ubuntu users:
 ```bash
-go get -u github.com/ichigoproject/addlicense
+sudo echo "deb [trusted=yes] https://repo.ichigoproject.org/apt/ /" > /etc/apt/sources.list.d/ichigo.list
+sudo apt update
+sudo apt install addlicense
 ```
 
+For RHEL users:
+```bash
+sudo vi /etc/yum.repos.d/ichigo.repo
+
+# Add this content in /etc/yum.repos.d/ichigo.repo 
+[fury]
+name=Ichigo Project official repository
+baseurl=https://repo.ichigoproject.org/yum/
+enabled=1
+gpgcheck=0
+
+sudo yum update
+sudo yum install addlicense
+```
 ## Usage
 ```
 addlicense [flags] pattern [pattern ...]
