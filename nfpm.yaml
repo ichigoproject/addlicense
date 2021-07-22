@@ -1,13 +1,13 @@
 name: "addlicense"
 arch: "amd64"
 platform: "linux"
-version: "v0.1.0"
+version: "v0.1.1"
 section: "default"
 priority: "extra"
 maintainer: "Julien Briault <dev@jbriault.fr>"
 description: |
-The program ensures source code files have copyright license headers
-by scanning directory patterns recursively.
+  The program ensures source code files have copyright license headers
+              by scanning directory patterns recursively.
 vendor: "Ichigo Project"
 homepage: "https://ichigoproject.org"
 license: "Apache"
