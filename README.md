@@ -81,13 +81,34 @@ sudo yum install addlicense
 ```
 ## Usage
 ```
-addlicense [flags] pattern [pattern ...]
+Usage: addlicense [flags] pattern [pattern ...]
 
--c copyright holder (defaults to "Ichigo Project")
--f custom license file (no default)
--l license type: apache, bsd, mit, mpl, gnu (defaults to "gnu")
--y year (defaults to current year)
--check check only mode: verify presence of license headers and exit with non-zero code if missing
+The program ensures source code files have copyright license headers
+by scanning directory patterns recursively.
+
+It modifies all source files in place and avoids adding a license header
+to any file that already has one.
+
+The pattern argument can be provided multiple times, and may also refer
+to single files.
+
+Flags:
+
+  -c string
+        copyright holder (default "Ichigo Project")
+  -check
+        check only mode: verify presence of license headers and exit with non-zero code if missing
+  -f string
+        license file
+  -l string
+        license type: apache, bsd, mit, mpl, gnu (default "gnu")
+  -p int
+        number of files to open in parallel (default 1000)
+  -skip value
+        To skip files to check/add the header file, for example: -skip rb -skip go
+  -v    verbose mode: print the name of the files that are modified
+  -y string
+        copyright year(s) (default "2021")
 ```
 The pattern argument can be provided multiple times, and may also refer
 to single files.
