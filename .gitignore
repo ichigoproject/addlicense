@@ -1,4 +1,7 @@
 testdata/
 dist/
 DEV.md
+build/
 addlicense
+Vagrantfile
+.vagrant/
