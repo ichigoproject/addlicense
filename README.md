@@ -56,7 +56,8 @@ to any file that already has one.
 
 This project is an fork from 'addlicense' by Google Inc with GNU support.
 
-![](asserts/gif/addlicense-example.gif)
+[![asciicast](https://asciinema.org/a/TMv12JAW3AHPRfcZ80QmKTXeR.svg)](https://asciinema.org/a/TMv12JAW3AHPRfcZ80QmKTXeR)
+
 ## Install
 For Debian/Ubuntu users:
 ```bash
