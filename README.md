@@ -117,7 +117,7 @@ to single files.
 ### Example
 Add "apache" license header on all files.
 ```
-addlicense -l apache -c "My company" apache path/to/your/code/
+addlicense -l apache -c "My company" path/to/your/code/
 ```
 
 Check if headers is present or not (in current directory):
