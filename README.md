@@ -69,7 +69,7 @@ For RHEL users:
 sudo vi /etc/yum.repos.d/ichigo.repo
 
 # Add this content in /etc/yum.repos.d/ichigo.repo 
-[fury]
+[ichigo]
 name=Ichigo Project official repository
 baseurl=https://repo.ichigoproject.org/yum/
 enabled=1
